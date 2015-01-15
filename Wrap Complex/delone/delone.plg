@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: delone - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP71.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".." /D "_LIB" /D "__DEBUG__" /D "USE_ASCII" /D "_WINDOWS" /D "WIN32" /D "_DEBUG" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\hcheng\Research\Current\Skin\delone\boundary.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\dcbuilder.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\dcofaces.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\dcomp.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\dcompiter.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\faces.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\ksimpsize.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\simpsize.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP71.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\delone.lib"  .\Debug\boundary.obj .\Debug\dcbuilder.obj .\Debug\dcofaces.obj .\Debug\dcomp.obj .\Debug\dcompiter.obj .\Debug\faces.obj .\Debug\ksimpsize.obj .\Debug\simpsize.obj "
+<h3>Output Window</h3>
+Compiling...
+boundary.cpp
+dcbuilder.cpp
+dcofaces.cpp
+dcomp.cpp
+dcompiter.cpp
+faces.cpp
+ksimpsize.cpp
+simpsize.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+delone.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

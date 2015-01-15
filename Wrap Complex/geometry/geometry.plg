@@ -1,0 +1,130 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: geometry - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP72.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".." /D "_LIB" /D "__DEBUG__" /D "USE_ASCII" /D "_WINDOWS" /D "WIN32" /D "_DEBUG" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\hcheng\Research\Current\Skin\geometry\animate.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\boxes.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\bvtag.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\comp.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\computil.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\edgecycleset.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\edgeset.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\fliphandler.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\geomutil.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\ihandler.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\ksimplex.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\locate.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\orienter.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\ortribv.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\packedihandler.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\segmenttree.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\shortestpather.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\simph.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\simplex.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\simplexset.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\testint.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\tolerancer.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\trist.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\tristconnector.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\vertarray.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\vertex.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\vertset.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP72.tmp" 
+Creating temporary file "C:\TEMP\RSP73.tmp" with contents
+[
+/nologo /out:"Debug\geometry.lib" 
+.\Debug\animate.obj
+.\Debug\boxes.obj
+.\Debug\bvtag.obj
+.\Debug\comp.obj
+.\Debug\computil.obj
+.\Debug\edgecycleset.obj
+.\Debug\edgeset.obj
+.\Debug\fliphandler.obj
+.\Debug\geomutil.obj
+.\Debug\ihandler.obj
+.\Debug\ksimplex.obj
+.\Debug\locate.obj
+.\Debug\orienter.obj
+.\Debug\ortribv.obj
+.\Debug\packedihandler.obj
+.\Debug\segmenttree.obj
+.\Debug\shortestpather.obj
+.\Debug\simph.obj
+.\Debug\simplex.obj
+.\Debug\simplexset.obj
+.\Debug\testint.obj
+.\Debug\tolerancer.obj
+.\Debug\trist.obj
+.\Debug\tristconnector.obj
+.\Debug\vertarray.obj
+.\Debug\vertex.obj
+.\Debug\vertset.obj
+]
+Creating command line "link.exe -lib @C:\TEMP\RSP73.tmp"
+<h3>Output Window</h3>
+Compiling...
+animate.cpp
+boxes.cpp
+bvtag.cpp
+comp.cpp
+computil.cpp
+edgecycleset.cpp
+edgeset.cpp
+fliphandler.cpp
+geomutil.cpp
+ihandler.cpp
+ksimplex.cpp
+locate.cpp
+orienter.cpp
+ortribv.cpp
+packedihandler.cpp
+segmenttree.cpp
+shortestpather.cpp
+simph.cpp
+d:\users\hcheng\research\current\skin\basic\convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        d:\users\hcheng\research\current\skin\geometry\simph.cpp(189) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,int *,unsigned int,unsigned int)' being compiled
+simplex.cpp
+simplexset.cpp
+Generating Code...
+Compiling...
+testint.cpp
+d:\users\hcheng\research\current\skin\geometry\testint.cpp(443) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\geometry\testint.cpp(457) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\geometry\testint.cpp(463) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\geometry\testint.cpp(477) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\geometry\testint.cpp(482) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\geometry\testint.cpp(496) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\geometry\testint.cpp(510) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+tolerancer.cpp
+d:\users\hcheng\research\current\skin\geometry\tolerancer.cpp(304) : warning C4101: 'absDist' : unreferenced local variable
+d:\users\hcheng\research\current\skin\geometry\tolerancer.cpp(443) : warning C4101: 'absmax' : unreferenced local variable
+d:\users\hcheng\research\current\skin\geometry\tolerancer.cpp(1091) : warning C4101: 'j' : unreferenced local variable
+trist.cpp
+d:\users\hcheng\research\current\skin\geometry\trist.cpp(154) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\geometry\trist.cpp(206) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\geometry\trist.cpp(687) : warning C4390: ';' : empty controlled statement found; is this the intent?
+tristconnector.cpp
+vertarray.cpp
+vertex.cpp
+vertset.cpp
+Generating Code...
+d:\users\hcheng\research\current\skin\geometry\tolerancer.cpp(1200) : warning C4700: local variable 's2' used without having been initialized
+d:\users\hcheng\research\current\skin\geometry\tolerancer.cpp(1201) : warning C4700: local variable 't2' used without having been initialized
+Creating library...
+
+
+
+<h3>Results</h3>
+geometry.lib - 0 error(s), 16 warning(s)
+</pre>
+</body>
+</html>

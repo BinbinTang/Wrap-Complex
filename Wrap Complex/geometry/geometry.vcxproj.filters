@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{50ff7f91-f76c-4473-81cd-ec8258f4a8d7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2d99805d-6bf1-4473-8b8f-205fb3598f4d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="animate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boxes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bvtag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="comp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="computil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edgecycleset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edgeset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fliphandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="geomutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ihandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ksimplex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="locate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="orienter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ortribv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packedihandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="segmenttree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shortestpather.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simplex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simplexset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tolerancer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tristconnector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vertarray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vertset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="animate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="boxes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bvtag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cofaces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="comp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="computil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edgecycleset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edgeset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fliphandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="geomutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ihandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ksimplex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="locate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modtrinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="orienter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ortribv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packedihandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="segmenttree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shortestpather.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simplex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simplexset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tolerancer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tristconnector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tristmodifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vertarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vertset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

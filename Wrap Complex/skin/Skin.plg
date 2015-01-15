@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Skin - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Skin.res" /d "_DEBUG" /d "_AFXDLL" "D:\Users\hcheng\Research\Current\Skin\old skin view\Skin.rc"" 
+Creating temporary file "C:\TEMP\RSP7C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".." /D "_AFXDLL" /D "__DEBUG__" /D "USE_ASCII" /D "_WINDOWS" /D "WIN32" /D "_DEBUG" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\hcheng\Research\Current\Skin\old skin view\AlphaDlg.cpp"
+"D:\Users\hcheng\Research\Current\Skin\old skin view\MainFrm.cpp"
+"D:\Users\hcheng\Research\Current\Skin\old skin view\Skin.cpp"
+"D:\Users\hcheng\Research\Current\Skin\old skin view\SkinDoc.cpp"
+"D:\Users\hcheng\Research\Current\Skin\old skin view\SkinView.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP7C.tmp" 
+Creating temporary file "C:\TEMP\RSP7D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".." /D "_AFXDLL" /D "__DEBUG__" /D "USE_ASCII" /D "_WINDOWS" /D "WIN32" /D "_DEBUG" /D "_MBCS" /FR"Debug/" /Fp"Debug/Skin.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\hcheng\Research\Current\Skin\old skin view\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP7D.tmp" 
+Creating temporary file "C:\TEMP\RSP7E.tmp" with contents
+[
+opengl32.lib glu32.lib glaux.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Skin.pdb" /debug /machine:I386 /out:"Debug/Skin.exe" /pdbtype:sept 
+".\Debug\AlphaDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Skin.obj"
+".\Debug\SkinDoc.obj"
+".\Debug\SkinView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Skin.res"
+]
+Creating command line "link.exe @C:\TEMP\RSP7E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AlphaDlg.cpp
+MainFrm.cpp
+Skin.cpp
+SkinDoc.cpp
+SkinView.cpp
+d:\users\hcheng\research\current\skin\old skin view\skinview.cpp(202) : warning C4101: 'pPal' : unreferenced local variable
+d:\users\hcheng\research\current\skin\old skin view\skinview.cpp(203) : warning C4101: 'paletteSize' : unreferenced local variable
+Generating Code...
+d:\users\hcheng\research\current\skin\old skin view\skinview.cpp(324) : warning C4715: 'CSkinView::OnCreate' : not all control paths return a value
+Linking...
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: void __thiscall RealPArray::getBBox(double *,double *)const " (?getBBox@RealPArray@@QBEXPAN0@Z)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: int __thiscall DCompBuilder::addPoint(double * const)" (?addPoint@DCompBuilder@@QAEHQAN@Z)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: __thiscall DCompBuilder::DCompBuilder(int,int,int)" (??0DCompBuilder@@QAE@HHH@Z)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: class RealPArray * __thiscall CompDB::getPArray(void)" (?getPArray@CompDB@@QAEPAVRealPArray@@XZ)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: __thiscall SkinMesh::SkinMesh(class CompDB *)" (??0SkinMesh@@QAE@PAVCompDB@@@Z)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: __thiscall CompDB::CompDB(class DCompBuilder *)" (??0CompDB@@QAE@PAVDCompBuilder@@@Z)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: void __thiscall DCompBuilder::cleanTriangulation(void)" (?cleanTriangulation@DCompBuilder@@QAEXXZ)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: int __thiscall DCompBuilder::compute(void)" (?compute@DCompBuilder@@QAEHXZ)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: class Trist * __thiscall CompDB::getTrist(void)" (?getTrist@CompDB@@QAEPAVTrist@@XZ)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: int __thiscall CompDB::getIndex(class OrTri,int)" (?getIndex@CompDB@@QAEHVOrTri@@H@Z)
+SkinDoc.obj : error LNK2001: unresolved external symbol "public: void __thiscall SkinMesh::draw(void)" (?draw@SkinMesh@@QAEXXZ)
+SkinView.obj : error LNK2001: unresolved external symbol "class Vector3  __cdecl cross_prod(class Vector3,class Vector3)" (?cross_prod@@YA?AVVector3@@V1@0@Z)
+SkinView.obj : error LNK2001: unresolved external symbol "public: class Vector3  __thiscall Vector3::operator-(class Vector3)" (??GVector3@@QAE?AV0@V0@@Z)
+SkinView.obj : error LNK2001: unresolved external symbol "public: int __thiscall BitVector::getNextClear(int)" (?getNextClear@BitVector@@QAEHH@Z)
+SkinView.obj : error LNK2001: unresolved external symbol "public: int __thiscall BitVector::getNextSet(int)" (?getNextSet@BitVector@@QAEHH@Z)
+SkinView.obj : error LNK2001: unresolved external symbol "protected: static int *  Trist::vo" (?vo@Trist@@1PAHA)
+SkinView.obj : error LNK2001: unresolved external symbol "protected: static int *  Trist::ve" (?ve@Trist@@1PAHA)
+Debug/Skin.exe : fatal error LNK1120: 17 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+Skin.exe - 18 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

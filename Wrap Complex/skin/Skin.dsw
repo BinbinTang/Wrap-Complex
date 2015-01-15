@@ -1,0 +1,125 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "CompDB"=.\CompDB\CompDB.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Skin"=.\Skin.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CompDB
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name delone
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name geometry
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name basic
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name li
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name sos
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "basic"=.\basic\basic.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "delone"=.\delone\delone.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name geometry
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name basic
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "geometry"=.\geometry\geometry.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "li"=.\li\li.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "sos"=.\sos\sos.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

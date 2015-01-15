@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c574639c-9476-4211-9853-6485f53face1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{54a552c5-93bd-4016-9d5c-a3d09be955d4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="binio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitvector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacklist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="callbackobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdlookup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="comment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="convert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dumpable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flexlm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="genmatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="history.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kdtree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="license.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="miscmath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nurbsdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="perftimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rectsel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rgicstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rgimatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rgimessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rgimessagestack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rgistring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rgitranslator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rgivector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stackbv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stringtable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vectmat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vertexarray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vltdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wfshortestpather.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wireframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="basic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cb_doprnt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="getarg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="isort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="malloc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="math2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qsort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="raindrop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tokenize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xdr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="binio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bitvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="build.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacklist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="callbackobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdlookup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="comment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="convert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumpable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="facepoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="farray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flexlm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="freearray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="genmatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="history.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterstack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kdtree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="license.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lm_attr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lm_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lmclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lmpolicy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="logfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="miscmath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="multitree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nurbsdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="orindex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ortri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="perftimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="points.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pqueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rectsel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rgicstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rgimatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rgimessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rgimessagestack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rgistring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rgitranslator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rgitypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rgivector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stackbv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stringtable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tritype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unix_basic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vectmat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="versions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vertexarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vltdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wfshortestpather.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win_basic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wireframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xdr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

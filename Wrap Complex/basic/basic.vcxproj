@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{2CB8E37B-BD13-487B-89F1-9491287CC326}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>D:\yanke\tangbinbin\Wrap Complex\basic\Debug;D:\yanke\tangbinbin\Wrap Complex\CompDB\Debug;D:\yanke\tangbinbin\Wrap Complex\delone\Debug;D:\yanke\tangbinbin\Wrap Complex\geometry\Debug;D:\yanke\tangbinbin\Wrap Complex\li\Debug;D:\yanke\tangbinbin\Wrap Complex\sos\Debug;D:\yanke\tangbinbin\Wrap Complex\GL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LIB;USE_ASCII;NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\basic.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\basic.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\basic.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LIB;__DEBUG__;USE_ASCII;_DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\basic.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\basic.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\basic.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="arg.cpp" />
+    <ClCompile Include="basic.cpp" />
+    <ClCompile Include="binio.cpp" />
+    <ClCompile Include="bitvector.cpp" />
+    <ClCompile Include="callbacklist.cpp" />
+    <ClCompile Include="callbackobject.cpp" />
+    <ClCompile Include="cb.cpp" />
+    <ClCompile Include="cb_doprnt.cpp" />
+    <ClCompile Include="cmdlookup.cpp" />
+    <ClCompile Include="command.cpp" />
+    <ClCompile Include="comment.cpp" />
+    <ClCompile Include="console.cpp" />
+    <ClCompile Include="convert.cpp" />
+    <ClCompile Include="data.cpp" />
+    <ClCompile Include="dumpable.cpp" />
+    <ClCompile Include="files.cpp" />
+    <ClCompile Include="flexlm.cpp" />
+    <ClCompile Include="genmatrix.cpp" />
+    <ClCompile Include="getarg.cpp" />
+    <ClCompile Include="history.cpp" />
+    <ClCompile Include="iit.cpp" />
+    <ClCompile Include="isort.cpp" />
+    <ClCompile Include="kdtree.cpp" />
+    <ClCompile Include="license.cpp" />
+    <ClCompile Include="logfile.cpp" />
+    <ClCompile Include="malloc.cpp" />
+    <ClCompile Include="math2.cpp" />
+    <ClCompile Include="miscmath.cpp" />
+    <ClCompile Include="nurbsdata.cpp" />
+    <ClCompile Include="perftimer.cpp" />
+    <ClCompile Include="points.cpp" />
+    <ClCompile Include="prime.cpp" />
+    <ClCompile Include="qsort.cpp" />
+    <ClCompile Include="raindrop.cpp" />
+    <ClCompile Include="rectsel.cpp" />
+    <ClCompile Include="rgicstring.cpp" />
+    <ClCompile Include="rgimatrix.cpp" />
+    <ClCompile Include="rgimessage.cpp" />
+    <ClCompile Include="rgimessagestack.cpp" />
+    <ClCompile Include="rgistring.cpp" />
+    <ClCompile Include="rgitranslator.cpp" />
+    <ClCompile Include="rgivector.cpp" />
+    <ClCompile Include="spectrum.cpp" />
+    <ClCompile Include="stackbv.cpp" />
+    <ClCompile Include="stringtable.cpp" />
+    <ClCompile Include="time.cpp" />
+    <ClCompile Include="tokenize.cpp" />
+    <ClCompile Include="uf.cpp" />
+    <ClCompile Include="vectmat.cpp" />
+    <ClCompile Include="vertexarray.cpp" />
+    <ClCompile Include="vltdata.cpp" />
+    <ClCompile Include="wfshortestpather.cpp" />
+    <ClCompile Include="wireframe.cpp" />
+    <ClCompile Include="xdr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basic.h" />
+    <ClInclude Include="binio.h" />
+    <ClInclude Include="bitvector.h" />
+    <ClInclude Include="build.h" />
+    <ClInclude Include="callbacklist.h" />
+    <ClInclude Include="callbackobject.h" />
+    <ClInclude Include="cmdlookup.h" />
+    <ClInclude Include="command.h" />
+    <ClInclude Include="comment.h" />
+    <ClInclude Include="convert.h" />
+    <ClInclude Include="data.h" />
+    <ClInclude Include="dumpable.h" />
+    <ClInclude Include="facepoint.h" />
+    <ClInclude Include="farray.h" />
+    <ClInclude Include="flexlm.h" />
+    <ClInclude Include="freearray.h" />
+    <ClInclude Include="genmatrix.h" />
+    <ClInclude Include="history.h" />
+    <ClInclude Include="index.h" />
+    <ClInclude Include="iterstack.h" />
+    <ClInclude Include="kdtree.h" />
+    <ClInclude Include="license.h" />
+    <ClInclude Include="list.h" />
+    <ClInclude Include="lm_attr.h" />
+    <ClInclude Include="lm_code.h" />
+    <ClInclude Include="lmclient.h" />
+    <ClInclude Include="lmpolicy.h" />
+    <ClInclude Include="logfile.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="miscmath.h" />
+    <ClInclude Include="multitree.h" />
+    <ClInclude Include="nurbsdata.h" />
+    <ClInclude Include="orindex.h" />
+    <ClInclude Include="ortri.h" />
+    <ClInclude Include="perftimer.h" />
+    <ClInclude Include="points.h" />
+    <ClInclude Include="pqueue.h" />
+    <ClInclude Include="queue.h" />
+    <ClInclude Include="rarray.h" />
+    <ClInclude Include="rectsel.h" />
+    <ClInclude Include="rgicstring.h" />
+    <ClInclude Include="rgimatrix.h" />
+    <ClInclude Include="rgimessage.h" />
+    <ClInclude Include="rgimessagestack.h" />
+    <ClInclude Include="rgistring.h" />
+    <ClInclude Include="rgitranslator.h" />
+    <ClInclude Include="rgitypes.h" />
+    <ClInclude Include="rgivector.h" />
+    <ClInclude Include="spectrum.h" />
+    <ClInclude Include="stackbv.h" />
+    <ClInclude Include="stringtable.h" />
+    <ClInclude Include="tritype.h" />
+    <ClInclude Include="unix_basic.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="vectmat.h" />
+    <ClInclude Include="versions.h" />
+    <ClInclude Include="vertexarray.h" />
+    <ClInclude Include="vltdata.h" />
+    <ClInclude Include="wfshortestpather.h" />
+    <ClInclude Include="win_basic.h" />
+    <ClInclude Include="wireframe.h" />
+    <ClInclude Include="xdr.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,255 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: basic - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP6E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".." /D "_LIB" /D "__DEBUG__" /D "USE_ASCII" /D "_WINDOWS" /D "WIN32" /D "_DEBUG" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\hcheng\Research\Current\Skin\basic\arg.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\basic.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\binio.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\bitvector.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\callbacklist.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\callbackobject.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\cb.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\cb_doprnt.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\cmdlookup.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\command.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\comment.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\convert.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\data.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\dumpable.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\files.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\flexlm.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\genmatrix.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\getarg.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\history.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\iit.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\isort.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\kdtree.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\license.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\logfile.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\malloc.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\math2.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\miscmath.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\nurbsdata.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\perftimer.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\points.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\prime.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\qsort.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\raindrop.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\rectsel.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgicstring.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgimatrix.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgimessage.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgimessagestack.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgistring.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgitranslator.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgivector.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\spectrum.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\stackbv.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\stringtable.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\time.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\tokenize.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\uf.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\vectmat.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\vertexarray.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\vltdata.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\wfshortestpather.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\wireframe.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\xdr.c"
+]
+Creating command line "cl.exe @C:\TEMP\RSP6E.tmp" 
+Creating temporary file "C:\TEMP\RSP6F.tmp" with contents
+[
+/nologo /out:"Debug\basic.lib" 
+.\Debug\arg.obj
+.\Debug\basic.obj
+.\Debug\binio.obj
+.\Debug\bitvector.obj
+.\Debug\callbacklist.obj
+.\Debug\callbackobject.obj
+.\Debug\cb.obj
+.\Debug\cb_doprnt.obj
+.\Debug\cmdlookup.obj
+.\Debug\command.obj
+.\Debug\comment.obj
+.\Debug\convert.obj
+.\Debug\data.obj
+.\Debug\dumpable.obj
+.\Debug\files.obj
+.\Debug\flexlm.obj
+.\Debug\genmatrix.obj
+.\Debug\getarg.obj
+.\Debug\history.obj
+.\Debug\iit.obj
+.\Debug\isort.obj
+.\Debug\kdtree.obj
+.\Debug\license.obj
+.\Debug\logfile.obj
+.\Debug\malloc.obj
+.\Debug\math2.obj
+.\Debug\miscmath.obj
+.\Debug\nurbsdata.obj
+.\Debug\perftimer.obj
+.\Debug\points.obj
+.\Debug\prime.obj
+.\Debug\qsort.obj
+.\Debug\raindrop.obj
+.\Debug\rectsel.obj
+.\Debug\rgicstring.obj
+.\Debug\rgimatrix.obj
+.\Debug\rgimessage.obj
+.\Debug\rgimessagestack.obj
+.\Debug\rgistring.obj
+.\Debug\rgitranslator.obj
+.\Debug\rgivector.obj
+.\Debug\spectrum.obj
+.\Debug\stackbv.obj
+.\Debug\stringtable.obj
+.\Debug\time.obj
+.\Debug\tokenize.obj
+.\Debug\uf.obj
+.\Debug\vectmat.obj
+.\Debug\vertexarray.obj
+.\Debug\vltdata.obj
+.\Debug\wfshortestpather.obj
+.\Debug\wireframe.obj
+.\Debug\xdr.obj
+]
+Creating command line "link.exe -lib @C:\TEMP\RSP6F.tmp"
+<h3>Output Window</h3>
+Compiling...
+arg.c
+basic.c
+Generating Code...
+Compiling...
+binio.cpp
+d:\users\hcheng\research\current\skin\basic\binio.cpp(549) : warning C4018: '==' : signed/unsigned mismatch
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(560) : see reference to function template instantiation 'int __cdecl writeInteger(class BinOutput *,int *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\binio.cpp(549) : warning C4018: '==' : signed/unsigned mismatch
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(567) : see reference to function template instantiation 'int __cdecl writeInteger(class BinOutput *,unsigned int *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\binio.cpp(549) : warning C4018: '==' : signed/unsigned mismatch
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(574) : see reference to function template instantiation 'int __cdecl writeInteger(class BinOutput *,char *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\binio.cpp(549) : warning C4018: '==' : signed/unsigned mismatch
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(581) : see reference to function template instantiation 'int __cdecl writeInteger(class BinOutput *,unsigned char *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\binio.cpp(549) : warning C4018: '==' : signed/unsigned mismatch
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(588) : see reference to function template instantiation 'int __cdecl writeInteger(class BinOutput *,short *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\binio.cpp(549) : warning C4018: '==' : signed/unsigned mismatch
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(595) : see reference to function template instantiation 'int __cdecl writeInteger(class BinOutput *,unsigned short *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\binio.cpp(636) : warning C4018: '==' : signed/unsigned mismatch
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(647) : see reference to function template instantiation 'int __cdecl writeFloating(class BinOutput *,float *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\binio.cpp(636) : warning C4018: '==' : signed/unsigned mismatch
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(654) : see reference to function template instantiation 'int __cdecl writeFloating(class BinOutput *,double *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,int *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,char *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,unsigned char *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,short *,unsigned int,unsigned int)' being compiled
+d:\users\hcheng\research\current\skin\basic\convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        d:\users\hcheng\research\current\skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,unsigned short *,unsigned int,unsigned int)' being compiled
+bitvector.cpp
+d:\users\hcheng\research\current\skin\basic\bitvector.cpp(72) : warning C4018: '==' : signed/unsigned mismatch
+callbacklist.cpp
+callbackobject.cpp
+Generating Code...
+Compiling...
+cb.c
+cb_doprnt.c
+Generating Code...
+Compiling...
+cmdlookup.cpp
+command.cpp
+comment.cpp
+convert.cpp
+data.cpp
+d:\users\hcheng\research\current\skin\basic\data.cpp(183) : warning C4244: 'argument' : conversion from 'const double' to 'int', possible loss of data
+dumpable.cpp
+Generating Code...
+Compiling...
+files.c
+Generating Code...
+Compiling...
+flexlm.cpp
+genmatrix.cpp
+Generating Code...
+Compiling...
+getarg.c
+Generating Code...
+Compiling...
+history.cpp
+Generating Code...
+Compiling...
+iit.c
+isort.c
+Generating Code...
+Compiling...
+kdtree.cpp
+license.cpp
+logfile.cpp
+Generating Code...
+Compiling...
+malloc.c
+math2.c
+Generating Code...
+Compiling...
+miscmath.cpp
+nurbsdata.cpp
+perftimer.cpp
+points.cpp
+Generating Code...
+Compiling...
+prime.c
+qsort.c
+raindrop.c
+Generating Code...
+Compiling...
+rectsel.cpp
+rgicstring.cpp
+rgimatrix.cpp
+rgimessage.cpp
+rgimessagestack.cpp
+rgistring.cpp
+rgitranslator.cpp
+rgivector.cpp
+spectrum.cpp
+stackbv.cpp
+stringtable.cpp
+Generating Code...
+Compiling...
+time.c
+tokenize.c
+uf.c
+Generating Code...
+Compiling...
+vectmat.cpp
+d:\users\hcheng\research\current\skin\basic\vectmat.cpp(142) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\basic\vectmat.cpp(143) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\basic\vectmat.cpp(144) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+vertexarray.cpp
+d:\users\hcheng\research\current\skin\basic\vertexarray.cpp(127) : warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\basic\vertexarray.cpp(128) : warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+d:\users\hcheng\research\current\skin\basic\vertexarray.cpp(129) : warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+vltdata.cpp
+wfshortestpather.cpp
+wireframe.cpp
+Generating Code...
+Compiling...
+xdr.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+basic.lib - 0 error(s), 21 warning(s)
+</pre>
+</body>
+</html>

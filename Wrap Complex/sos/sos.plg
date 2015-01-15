@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: sos - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP75.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".." /D "_LIB" /D "__DEBUG__" /D "USE_ASCII" /D "_WINDOWS" /D "WIN32" /D "_DEBUG" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\hcheng\Research\Current\Skin\sos\predicates.cpp"
+"D:\Users\hcheng\Research\Current\Skin\sos\size.cpp"
+"D:\Users\hcheng\Research\Current\Skin\sos\soseval.cpp"
+"D:\Users\hcheng\Research\Current\Skin\sos\sosfloat.cpp"
+"D:\Users\hcheng\Research\Current\Skin\sos\sosprim.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP75.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\sos.lib"  .\Debug\predicates.obj .\Debug\size.obj .\Debug\soseval.obj .\Debug\sosfloat.obj .\Debug\sosprim.obj "
+<h3>Output Window</h3>
+Compiling...
+predicates.cpp
+size.cpp
+soseval.cpp
+sosfloat.cpp
+sosprim.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+sos.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

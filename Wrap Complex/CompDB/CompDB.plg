@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CompDB - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP70.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".." /D "_LIB" /D "__DEBUG__" /D "USE_ASCII" /D "_WINDOWS" /D "WIN32" /D "_DEBUG" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\hcheng\Research\Current\Skin\CompDB\compDB.cpp"
+"D:\Users\hcheng\Research\Current\Skin\CompDB\SkinMesh.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP70.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\CompDB.lib"  .\Debug\compDB.obj .\Debug\SkinMesh.obj "
+<h3>Output Window</h3>
+Compiling...
+compDB.cpp
+SkinMesh.cpp
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(61) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(146) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(175) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(267) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(292) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(206) : warning C4101: 'hmax' : unreferenced local variable
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(323) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(354) : warning C4101: 'x' : unreferenced local variable
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(353) : warning C4101: 'vi' : unreferenced local variable
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(352) : warning C4101: 'i' : unreferenced local variable
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(352) : warning C4101: 'j' : unreferenced local variable
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(607) : warning C4101: 'vi1' : unreferenced local variable
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(607) : warning C4101: 'vi2' : unreferenced local variable
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(607) : warning C4101: 'vi3' : unreferenced local variable
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(562) : warning C4101: 'fi' : unreferenced local variable
+d:\users\hcheng\research\current\skin\compdb\skinmesh.cpp(607) : warning C4101: 'vi4' : unreferenced local variable
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+CompDB.lib - 0 error(s), 16 warning(s)
+</pre>
+</body>
+</html>

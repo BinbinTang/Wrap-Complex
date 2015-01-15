@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: li - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP74.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".." /D "_LIB" /D "__DEBUG__" /D "USE_ASCII" /D "_WINDOWS" /D "WIN32" /D "_DEBUG" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Users\hcheng\Research\Current\Skin\li\chars.c"
+"D:\Users\hcheng\Research\Current\Skin\li\det.c"
+"D:\Users\hcheng\Research\Current\Skin\li\li.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\lia.c"
+"D:\Users\hcheng\Research\Current\Skin\li\liaux.c"
+"D:\Users\hcheng\Research\Current\Skin\li\lidet.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\liminor.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\lipoints.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\listack.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\pool.c"
+"D:\Users\hcheng\Research\Current\Skin\li\stack.c"
+]
+Creating command line "cl.exe @C:\TEMP\RSP74.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\li.lib"  .\Debug\chars.obj .\Debug\det.obj .\Debug\li.obj .\Debug\lia.obj .\Debug\liaux.obj .\Debug\lidet.obj .\Debug\liminor.obj .\Debug\lipoints.obj .\Debug\listack.obj .\Debug\pool.obj .\Debug\stack.obj "
+<h3>Output Window</h3>
+Compiling...
+chars.c
+det.c
+Generating Code...
+Compiling...
+li.cpp
+Generating Code...
+Compiling...
+lia.c
+liaux.c
+d:\users\hcheng\research\current\skin\li\liaux.c(200) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+d:\users\hcheng\research\current\skin\li\liaux.c(201) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+d:\users\hcheng\research\current\skin\li\liaux.c(202) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+d:\users\hcheng\research\current\skin\li\liaux.c(203) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+d:\users\hcheng\research\current\skin\li\liaux.c(210) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+d:\users\hcheng\research\current\skin\li\liaux.c(444) : warning C4018: '>' : signed/unsigned mismatch
+d:\users\hcheng\research\current\skin\li\liaux.c(469) : warning C4018: '>' : signed/unsigned mismatch
+d:\users\hcheng\research\current\skin\li\liaux.c(477) : warning C4018: '<' : signed/unsigned mismatch
+d:\users\hcheng\research\current\skin\li\liaux.c(488) : warning C4018: '>' : signed/unsigned mismatch
+d:\users\hcheng\research\current\skin\li\liaux.c(496) : warning C4018: '>' : signed/unsigned mismatch
+d:\users\hcheng\research\current\skin\li\liaux.c(507) : warning C4018: '>' : signed/unsigned mismatch
+d:\users\hcheng\research\current\skin\li\liaux.c(513) : warning C4018: '!=' : signed/unsigned mismatch
+d:\users\hcheng\research\current\skin\li\liaux.c(559) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Generating Code...
+Compiling...
+lidet.cpp
+liminor.cpp
+lipoints.cpp
+listack.cpp
+Generating Code...
+Compiling...
+pool.c
+stack.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+li.lib - 0 error(s), 13 warning(s)
+</pre>
+</body>
+</html>

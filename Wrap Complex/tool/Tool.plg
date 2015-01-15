@@ -1,0 +1,574 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: basic - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\RSP8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".." /D "_LIB" /D "USE_ASCII" /D "NDEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Users\hcheng\Research\Current\Skin\basic\arg.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\basic.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\binio.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\bitvector.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\callbacklist.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\callbackobject.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\cb.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\cb_doprnt.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\cmdlookup.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\command.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\comment.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\convert.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\data.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\dumpable.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\files.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\flexlm.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\genmatrix.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\getarg.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\history.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\iit.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\isort.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\kdtree.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\license.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\logfile.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\malloc.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\math2.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\miscmath.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\nurbsdata.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\perftimer.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\points.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\prime.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\qsort.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\raindrop.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\rectsel.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgicstring.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgimatrix.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgimessage.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgimessagestack.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgistring.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgitranslator.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\rgivector.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\spectrum.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\stackbv.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\stringtable.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\time.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\tokenize.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\uf.c"
+"D:\Users\hcheng\Research\Current\Skin\basic\vectmat.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\vertexarray.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\vltdata.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\wfshortestpather.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\wireframe.cpp"
+"D:\Users\hcheng\Research\Current\Skin\basic\xdr.c"
+]
+Creating command line "cl.exe @C:\WINNT\RSP8.tmp" 
+Creating temporary file "C:\WINNT\RSP9.tmp" with contents
+[
+/nologo /out:"Release\basic.lib" 
+.\Release\arg.obj
+.\Release\basic.obj
+.\Release\binio.obj
+.\Release\bitvector.obj
+.\Release\callbacklist.obj
+.\Release\callbackobject.obj
+.\Release\cb.obj
+.\Release\cb_doprnt.obj
+.\Release\cmdlookup.obj
+.\Release\command.obj
+.\Release\comment.obj
+.\Release\convert.obj
+.\Release\data.obj
+.\Release\dumpable.obj
+.\Release\files.obj
+.\Release\flexlm.obj
+.\Release\genmatrix.obj
+.\Release\getarg.obj
+.\Release\history.obj
+.\Release\iit.obj
+.\Release\isort.obj
+.\Release\kdtree.obj
+.\Release\license.obj
+.\Release\logfile.obj
+.\Release\malloc.obj
+.\Release\math2.obj
+.\Release\miscmath.obj
+.\Release\nurbsdata.obj
+.\Release\perftimer.obj
+.\Release\points.obj
+.\Release\prime.obj
+.\Release\qsort.obj
+.\Release\raindrop.obj
+.\Release\rectsel.obj
+.\Release\rgicstring.obj
+.\Release\rgimatrix.obj
+.\Release\rgimessage.obj
+.\Release\rgimessagestack.obj
+.\Release\rgistring.obj
+.\Release\rgitranslator.obj
+.\Release\rgivector.obj
+.\Release\spectrum.obj
+.\Release\stackbv.obj
+.\Release\stringtable.obj
+.\Release\time.obj
+.\Release\tokenize.obj
+.\Release\uf.obj
+.\Release\vectmat.obj
+.\Release\vertexarray.obj
+.\Release\vltdata.obj
+.\Release\wfshortestpather.obj
+.\Release\wireframe.obj
+.\Release\xdr.obj
+]
+Creating command line "link.exe -lib @C:\WINNT\RSP9.tmp"
+<h3>Output Window</h3>
+Compiling...
+arg.c
+basic.c
+Generating Code...
+Compiling...
+binio.cpp
+..\basic/convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        D:\Users\hcheng\Research\Current\Skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,int *,unsigned int,unsigned int)' being compiled
+..\basic/convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        D:\Users\hcheng\Research\Current\Skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,char *,unsigned int,unsigned int)' being compiled
+..\basic/convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        D:\Users\hcheng\Research\Current\Skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,unsigned char *,unsigned int,unsigned int)' being compiled
+..\basic/convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        D:\Users\hcheng\Research\Current\Skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,short *,unsigned int,unsigned int)' being compiled
+..\basic/convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        D:\Users\hcheng\Research\Current\Skin\basic\binio.cpp(547) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,unsigned short *,unsigned int,unsigned int)' being compiled
+bitvector.cpp
+callbacklist.cpp
+callbackobject.cpp
+Generating Code...
+Compiling...
+cb.c
+cb_doprnt.c
+Generating Code...
+Compiling...
+cmdlookup.cpp
+command.cpp
+comment.cpp
+convert.cpp
+data.cpp
+D:\Users\hcheng\Research\Current\Skin\basic\data.cpp(183) : warning C4244: 'argument' : conversion from 'const double' to 'int', possible loss of data
+dumpable.cpp
+Generating Code...
+Compiling...
+files.c
+Generating Code...
+Compiling...
+flexlm.cpp
+genmatrix.cpp
+Generating Code...
+Compiling...
+getarg.c
+Generating Code...
+Compiling...
+history.cpp
+Generating Code...
+Compiling...
+iit.c
+isort.c
+Generating Code...
+Compiling...
+kdtree.cpp
+license.cpp
+logfile.cpp
+Generating Code...
+Compiling...
+malloc.c
+math2.c
+Generating Code...
+Compiling...
+miscmath.cpp
+nurbsdata.cpp
+perftimer.cpp
+points.cpp
+Generating Code...
+Compiling...
+prime.c
+qsort.c
+raindrop.c
+Generating Code...
+Compiling...
+rectsel.cpp
+rgicstring.cpp
+rgimatrix.cpp
+rgimessage.cpp
+rgimessagestack.cpp
+rgistring.cpp
+rgitranslator.cpp
+rgivector.cpp
+spectrum.cpp
+stackbv.cpp
+stringtable.cpp
+Generating Code...
+Compiling...
+time.c
+tokenize.c
+uf.c
+Generating Code...
+Compiling...
+vectmat.cpp
+D:\Users\hcheng\Research\Current\Skin\basic\vectmat.cpp(141) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\basic\vectmat.cpp(142) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\basic\vectmat.cpp(143) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+vertexarray.cpp
+D:\Users\hcheng\Research\Current\Skin\basic\vertexarray.cpp(127) : warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\basic\vertexarray.cpp(128) : warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\basic\vertexarray.cpp(129) : warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+vltdata.cpp
+wfshortestpather.cpp
+wireframe.cpp
+Generating Code...
+Compiling...
+xdr.c
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: CompDB - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\RSPA.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".." /D "_LIB" /D "USE_ASCII" /D "NDEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /Fp"Release/CompDB.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Users\hcheng\Research\Current\Skin\CompDB\compDB.cpp"
+"D:\Users\hcheng\Research\Current\Skin\CompDB\SkinMesh.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\RSPA.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\CompDB.lib"  .\Release\compDB.obj .\Release\SkinMesh.obj "
+<h3>Output Window</h3>
+Compiling...
+compDB.cpp
+SkinMesh.cpp
+D:\Users\hcheng\Research\Current\Skin\CompDB\SkinMesh.cpp(165) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\CompDB\SkinMesh.cpp(255) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\CompDB\SkinMesh.cpp(288) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\CompDB\SkinMesh.cpp(387) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\CompDB\SkinMesh.cpp(417) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\CompDB\SkinMesh.cpp(454) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+Creating library...
+<h3>
+--------------------Configuration: delone - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\RSPB.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".." /D "_LIB" /D "USE_ASCII" /D "NDEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Users\hcheng\Research\Current\Skin\delone\boundary.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\dcbuilder.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\dcofaces.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\dcomp.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\dcompiter.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\faces.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\ksimpsize.cpp"
+"D:\Users\hcheng\Research\Current\Skin\delone\simpsize.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\RSPB.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\delone.lib"  .\Release\boundary.obj .\Release\dcbuilder.obj .\Release\dcofaces.obj .\Release\dcomp.obj .\Release\dcompiter.obj .\Release\faces.obj .\Release\ksimpsize.obj .\Release\simpsize.obj "
+<h3>Output Window</h3>
+Compiling...
+boundary.cpp
+dcbuilder.cpp
+D:\Users\hcheng\Research\Current\Skin\delone\dcbuilder.cpp(498) : warning C4390: ';' : empty controlled statement found; is this the intent?
+D:\Users\hcheng\Research\Current\Skin\delone\dcbuilder.cpp(1443) : warning C4390: ';' : empty controlled statement found; is this the intent?
+D:\Users\hcheng\Research\Current\Skin\delone\dcbuilder.cpp(1457) : warning C4390: ';' : empty controlled statement found; is this the intent?
+D:\Users\hcheng\Research\Current\Skin\delone\dcbuilder.cpp(1513) : warning C4390: ';' : empty controlled statement found; is this the intent?
+dcofaces.cpp
+dcomp.cpp
+dcompiter.cpp
+faces.cpp
+ksimpsize.cpp
+simpsize.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: geometry - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\RSPC.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".." /D "_LIB" /D "USE_ASCII" /D "NDEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Users\hcheng\Research\Current\Skin\geometry\animate.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\boxes.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\bvtag.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\comp.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\computil.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\edgecycleset.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\edgeset.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\fliphandler.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\geomutil.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\ihandler.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\ksimplex.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\locate.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\orienter.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\ortribv.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\packedihandler.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\segmenttree.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\shortestpather.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\simph.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\simplex.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\simplexset.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\testint.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\tolerancer.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\trist.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\tristconnector.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\vertarray.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\vertex.cpp"
+"D:\Users\hcheng\Research\Current\Skin\geometry\vertset.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\RSPC.tmp" 
+Creating temporary file "C:\WINNT\RSPD.tmp" with contents
+[
+/nologo /out:"Release\geometry.lib" 
+.\Release\animate.obj
+.\Release\boxes.obj
+.\Release\bvtag.obj
+.\Release\comp.obj
+.\Release\computil.obj
+.\Release\edgecycleset.obj
+.\Release\edgeset.obj
+.\Release\fliphandler.obj
+.\Release\geomutil.obj
+.\Release\ihandler.obj
+.\Release\ksimplex.obj
+.\Release\locate.obj
+.\Release\orienter.obj
+.\Release\ortribv.obj
+.\Release\packedihandler.obj
+.\Release\segmenttree.obj
+.\Release\shortestpather.obj
+.\Release\simph.obj
+.\Release\simplex.obj
+.\Release\simplexset.obj
+.\Release\testint.obj
+.\Release\tolerancer.obj
+.\Release\trist.obj
+.\Release\tristconnector.obj
+.\Release\vertarray.obj
+.\Release\vertex.obj
+.\Release\vertset.obj
+]
+Creating command line "link.exe -lib @C:\WINNT\RSPD.tmp"
+<h3>Output Window</h3>
+Compiling...
+animate.cpp
+boxes.cpp
+bvtag.cpp
+comp.cpp
+computil.cpp
+edgecycleset.cpp
+edgeset.cpp
+fliphandler.cpp
+geomutil.cpp
+ihandler.cpp
+ksimplex.cpp
+locate.cpp
+orienter.cpp
+ortribv.cpp
+packedihandler.cpp
+segmenttree.cpp
+shortestpather.cpp
+simph.cpp
+..\basic/convert.hpp(47) : warning C4244: '=' : conversion from 'long' to 'char', possible loss of data
+        D:\Users\hcheng\Research\Current\Skin\geometry\simph.cpp(189) : see reference to function template instantiation 'void __cdecl encodeInteger(char *,int *,unsigned int,unsigned int)' being compiled
+simplex.cpp
+simplexset.cpp
+Generating Code...
+D:\Users\hcheng\Research\Current\Skin\geometry\shortestpather.cpp(107) : warning C4700: local variable 'tmp' used without having been initialized
+Compiling...
+testint.cpp
+D:\Users\hcheng\Research\Current\Skin\geometry\testint.cpp(443) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\geometry\testint.cpp(457) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\geometry\testint.cpp(463) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\geometry\testint.cpp(477) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\geometry\testint.cpp(482) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\geometry\testint.cpp(496) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\geometry\testint.cpp(510) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+tolerancer.cpp
+D:\Users\hcheng\Research\Current\Skin\geometry\tolerancer.cpp(304) : warning C4101: 'absDist' : unreferenced local variable
+D:\Users\hcheng\Research\Current\Skin\geometry\tolerancer.cpp(443) : warning C4101: 'absmax' : unreferenced local variable
+D:\Users\hcheng\Research\Current\Skin\geometry\tolerancer.cpp(1091) : warning C4101: 'j' : unreferenced local variable
+trist.cpp
+D:\Users\hcheng\Research\Current\Skin\geometry\trist.cpp(154) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\geometry\trist.cpp(206) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\geometry\trist.cpp(730) : warning C4390: ';' : empty controlled statement found; is this the intent?
+tristconnector.cpp
+vertarray.cpp
+vertex.cpp
+vertset.cpp
+Generating Code...
+D:\Users\hcheng\Research\Current\Skin\geometry\trist.cpp(550) : warning C4715: 'Trist::lmSearch' : not all control paths return a value
+D:\Users\hcheng\Research\Current\Skin\geometry\tolerancer.cpp(1200) : warning C4700: local variable 's2' used without having been initialized
+D:\Users\hcheng\Research\Current\Skin\geometry\tolerancer.cpp(1201) : warning C4700: local variable 't2' used without having been initialized
+Creating library...
+<h3>
+--------------------Configuration: li - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\RSPE.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".." /D "_LIB" /D "USE_ASCII" /D "NDEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Users\hcheng\Research\Current\Skin\li\chars.c"
+"D:\Users\hcheng\Research\Current\Skin\li\det.c"
+"D:\Users\hcheng\Research\Current\Skin\li\li.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\lia.c"
+"D:\Users\hcheng\Research\Current\Skin\li\liaux.c"
+"D:\Users\hcheng\Research\Current\Skin\li\lidet.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\liminor.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\lipoints.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\listack.cpp"
+"D:\Users\hcheng\Research\Current\Skin\li\pool.c"
+"D:\Users\hcheng\Research\Current\Skin\li\stack.c"
+]
+Creating command line "cl.exe @C:\WINNT\RSPE.tmp" 
+Creating temporary file "C:\WINNT\RSPF.tmp" with contents
+[
+/nologo /out:"Release\li.lib" 
+.\Release\chars.obj
+.\Release\det.obj
+.\Release\li.obj
+.\Release\lia.obj
+.\Release\liaux.obj
+.\Release\lidet.obj
+.\Release\liminor.obj
+.\Release\lipoints.obj
+.\Release\listack.obj
+.\Release\pool.obj
+.\Release\stack.obj
+]
+Creating command line "link.exe -lib @C:\WINNT\RSPF.tmp"
+<h3>Output Window</h3>
+Compiling...
+chars.c
+det.c
+Generating Code...
+Compiling...
+li.cpp
+Generating Code...
+Compiling...
+lia.c
+liaux.c
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(200) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(201) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(202) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(203) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(210) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(444) : warning C4018: '>' : signed/unsigned mismatch
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(469) : warning C4018: '>' : signed/unsigned mismatch
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(477) : warning C4018: '<' : signed/unsigned mismatch
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(488) : warning C4018: '>' : signed/unsigned mismatch
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(496) : warning C4018: '>' : signed/unsigned mismatch
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(507) : warning C4018: '>' : signed/unsigned mismatch
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(513) : warning C4018: '!=' : signed/unsigned mismatch
+D:\Users\hcheng\Research\Current\Skin\li\liaux.c(559) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Generating Code...
+Compiling...
+lidet.cpp
+liminor.cpp
+lipoints.cpp
+listack.cpp
+Generating Code...
+Compiling...
+pool.c
+stack.c
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: sos - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\RSP10.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".." /D "_LIB" /D "USE_ASCII" /D "NDEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Users\hcheng\Research\Current\Skin\sos\predicates.cpp"
+"D:\Users\hcheng\Research\Current\Skin\sos\size.cpp"
+"D:\Users\hcheng\Research\Current\Skin\sos\soseval.cpp"
+"D:\Users\hcheng\Research\Current\Skin\sos\sosfloat.cpp"
+"D:\Users\hcheng\Research\Current\Skin\sos\sosprim.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\RSP10.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\sos.lib"  .\Release\predicates.obj .\Release\size.obj .\Release\soseval.obj .\Release\sosfloat.obj .\Release\sosprim.obj "
+<h3>Output Window</h3>
+Compiling...
+predicates.cpp
+size.cpp
+soseval.cpp
+sosfloat.cpp
+sosprim.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: Tool - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40c /fo"Release/Tool.res" /d "NDEBUG" /d "_AFXDLL" "D:\Users\hcheng\Research\Current\Skin\OpenGL App\Tool.rc"" 
+Creating temporary file "C:\WINNT\RSP11.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".." /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "USE_ASCII" /D "_AFXDLL" /Fp"Release/Tool.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\AlphaDlg.cpp"
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\AskForCQ.cpp"
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\ChildFrm.cpp"
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\DlgAbout.cpp"
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\FormCommandView.cpp"
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\MainFrm.cpp"
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\RenderView.cpp"
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\Tool.cpp"
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\ToolDoc.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\RSP11.tmp" 
+Creating temporary file "C:\WINNT\RSP12.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".." /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "USE_ASCII" /D "_AFXDLL" /Fp"Release/Tool.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Users\hcheng\Research\Current\Skin\OpenGL App\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\RSP12.tmp" 
+Creating temporary file "C:\WINNT\RSP13.tmp" with contents
+[
+opengl32.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Tool.pdb" /machine:I386 /out:"Release/Tool.exe" 
+".\Release\AlphaDlg.obj"
+".\Release\AskForCQ.obj"
+".\Release\ChildFrm.obj"
+".\Release\DlgAbout.obj"
+".\Release\FormCommandView.obj"
+".\Release\MainFrm.obj"
+".\Release\RenderView.obj"
+".\Release\StdAfx.obj"
+".\Release\Tool.obj"
+".\Release\ToolDoc.obj"
+".\Release\Tool.res"
+"\Users\hcheng\Research\Current\Skin\basic\Release\basic.lib"
+"\Users\hcheng\Research\Current\Skin\CompDB\Release\CompDB.lib"
+"\Users\hcheng\Research\Current\Skin\delone\Release\delone.lib"
+"\Users\hcheng\Research\Current\Skin\geometry\Release\geometry.lib"
+"\Users\hcheng\Research\Current\Skin\li\Release\li.lib"
+"\Users\hcheng\Research\Current\Skin\sos\Release\sos.lib"
+]
+Creating command line "link.exe @C:\WINNT\RSP13.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AlphaDlg.cpp
+AskForCQ.cpp
+ChildFrm.cpp
+DlgAbout.cpp
+FormCommandView.cpp
+MainFrm.cpp
+RenderView.cpp
+Tool.cpp
+ToolDoc.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Tool.exe - 0 error(s), 53 warning(s)
+</pre>
+</body>
+</html>

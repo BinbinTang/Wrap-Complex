@@ -48,6 +48,7 @@ END_MESSAGE_MAP()
 CToolDoc::CToolDoc()
 {
 	dcb_ = NULL;
+	dcb_alpha = NULL;
 	cdb_ = NULL;
 	sm_  = NULL;
 	phase_ = NODATA;
@@ -61,6 +62,8 @@ CToolDoc::~CToolDoc()
 {
 	if(dcb_) 
 		delete dcb_;
+	if (dcb_alpha)
+		delete dcb_alpha;
 	if(sm_)
 		delete sm_;
 	if(cdb_)
@@ -86,7 +89,7 @@ BOOL CToolDoc::OnNewDocument()
 // CToolDoc serialization
 
 void CToolDoc::Serialize(CArchive& ar)
-{
+{ 
 	char s[1000];
 	double x[4];
 	
@@ -225,7 +228,120 @@ void CToolDoc::RenderScene()
 	}
 	if (phase_==ALPHAPHASE)
 	{
+		drawAlphaShape(alpha_);
+		glLineWidth(1);
 	}
+}
+
+void CToolDoc::drawAlphaShape(double alpha_)
+{
+	int i;
+	Vector3 v1,v2,v3,v4;
+	Vector3 c1,c2,c3;
+
+	//drawing the 3-simplex -- tetrahedron
+	glEnable(GL_LIGHTING);
+
+	for (i=1; i<=cdb_->numSimplex(3);i++)
+		{	
+			//assert(cdb_->getAlpha(i,3)!= NULL);
+			if(cdb_->getAlpha(i,3)<=alpha_)
+			{
+				cdb_->getVertex(i,v1,v2,v3,v4); 
+				c1=(v1-v2)/2+v2;
+				c2=(c1-v3)*2/3+v3;
+				c3=(c2-v4)*2/3+v4;
+		
+				v1 = (v1-c3)*0.98+c3;
+				v2 = (v2-c3)*0.98+c3;
+				v3 = (v3-c3)*0.98+c3;
+				v4 = (v4-c3)*0.98+c3;
+				
+				glColor3d(1,0,1);
+				glBegin(GL_TRIANGLES);
+					glVertex3dv(v1.x);
+					glVertex3dv(v2.x);
+					glVertex3dv(v3.x);
+					glVertex3dv(v1.x);
+					glVertex3dv(v2.x);
+					glVertex3dv(v4.x);
+					glVertex3dv(v1.x);
+					glVertex3dv(v3.x);
+					glVertex3dv(v4.x);
+					glVertex3dv(v2.x);
+					glVertex3dv(v3.x);
+					glVertex3dv(v4.x);
+				glEnd();
+			}
+		}
+
+	glDisable(GL_LIGHTING);
+
+	for (i=1;i<=cdb_->numSimplex(2);i++)
+		{
+			cdb_->getVertex(i,v1,v2,v3);
+			c1=(v1-v2)/2+v2;
+			c2=(c1-v3)*2/3+v3;
+			v1 = (v1-c2)*0.99+c2;
+			v2 = (v2-c2)*0.99+c2;
+			v3 = (v3-c2)*0.99+c2;				
+			
+			if(cdb_->getAlpha(i,2)<=alpha_)
+			{
+				glColor3d(0,0.5,1);
+				glBegin(GL_TRIANGLES);
+					glVertex3dv(v1.x);
+					glVertex3dv(v2.x);
+					glVertex3dv(v3.x);
+				glEnd();
+				
+			}
+	}
+
+	for(i=1;i<=cdb_->numSimplex(1);i++)
+		{
+			if(cdb_->getAlpha(i,1)<=alpha_)
+			{
+				cdb_->getVertex(i,v1,v2);
+			 
+			glColor3d(1,0.4,0);
+				/*glPushMatrix();
+					//glRotated(atan(v2.x[2]/v2.x[1]), 1, 0, 0);
+					//glRotated(, 0, 1, 0);
+					glTranslated(v1.x[0], v1.x[1], v1.x[2]);
+					gluCylinder(gluNewQuadric(), 0.1, 0.1, (v1-v2).length(), 100, 100);
+				glPopMatrix();
+				*/
+			glLineWidth(1);
+			glBegin(GL_LINES);
+				glVertex3dv(v1.x);
+				glVertex3dv(v2.x);
+			glEnd();
+			}
+		}
+
+
+	glEnable(GL_LIGHTING);
+	glEnable(GL_POINT_SMOOTH);
+	//drawing the 0-simplex -- vertex
+		glPointSize(8);
+		for(i=1;i<=cdb_->numSimplex(0);i++)
+		{
+		    v1 = cdb_->getVertex(i);
+			if((cdb_->getAlpha(i,0)<=alpha_) && !cdb_->redundent(i))
+			{
+				glColor3d(0, 1, 1);
+				//glPushMatrix();
+				//	glTranslatef(v1.x[0], v1.x[1], v1.x[2]);
+				//	gluDisk(gluNewQuadric(), 0, cdb_->getW(i), 100, 100);
+				//glPopMatrix();
+				glBegin(GL_POINTS);
+					glVertex3dv(v1.x);
+				glEnd();
+			}
+		}
+	glDisable(GL_POINT_SMOOTH);
+	glDisable(GL_LIGHTING); 
 }
 
 int CToolDoc::Phase()
@@ -244,8 +360,44 @@ void CToolDoc::ComputeDelTri()
 
 		if(cdb_)
 			delete cdb_;
+		cdb_ = new CompDB(dcb_);
+		UpdateAllViews(NULL);
+	} else if (phase_ == ALPHAPHASE){
+		phase_ = DELPHASE;
+		UpdateAllViews(NULL);
+	}
+}
+
+void CToolDoc::ComputeAlphaShape(double alpha)
+{
+	if(phase_==POINTPHASE)
+	{
+		dcb_->compute();
+		dcb_->cleanTriangulation();
+		phase_=ALPHAPHASE;
+		
+
+		if(cdb_)
+			delete cdb_;
+
+		alpha_ = alpha;
 		cdb_ = new CompDB(dcb_,true);
-		sm_ = new SkinMesh(cdb_);
+		UpdateAllViews(NULL);
+	}
+	else if (phase_==ALPHAPHASE)
+	{
+		alpha_ = alpha;
+		UpdateAllViews(NULL);
+	}
+	else if (phase_== DELPHASE)
+	{
+		//dcb_->compute();
+		//dcb_->cleanTriangulation();
+		phase_ = ALPHAPHASE;
+		alpha_ = alpha;
+		if (cdb_)
+			delete cdb_;
+		cdb_ = new CompDB(dcb_,true);
 		UpdateAllViews(NULL);
 	}
 }
@@ -316,3 +468,107 @@ void CToolDoc::OnViewStatistics()
 {
 	sm_->collectStatistics();
 }
+
+/*double* CToolDoc::ComputeRankZero()
+{
+	if (phase_ == POINTPHASE)
+	{
+		dcb_->compute();
+		dcb_->cleanTriangulation();
+		
+
+		if(cdb_)
+			delete cdb_;
+		cdb_ = new CompDB(dcb_);
+		return cdb_->getRankZero();
+	}
+	else if (phase_ == DELPHASE)
+	{
+		if (cdb_)
+			delete cdb_;
+		cdb_ = new CompDB(dcb_);
+		return cdb_->getRankZero();
+	}
+	else if (phase_ == ALPHAPHASE)
+	{
+		return cdb_->getRankZero();
+	}
+}
+
+double* CToolDoc::ComputeRankOne()
+{
+	if (phase_ == POINTPHASE)
+	{
+		dcb_->compute();
+		dcb_->cleanTriangulation();
+		
+
+		if(cdb_)
+			delete cdb_;
+		cdb_ = new CompDB(dcb_);
+		return cdb_->getRankOne();
+	}
+	else if (phase_ == DELPHASE)
+	{
+		if (cdb_)
+			delete cdb_;
+		cdb_ = new CompDB(dcb_);
+		return cdb_->getRankOne();
+	}
+	else if (phase_ == ALPHAPHASE)
+	{
+		return cdb_->getRankOne();
+	}
+}
+
+double* CToolDoc::ComputeRankTwo()
+{
+	if (phase_ == POINTPHASE)
+	{
+		dcb_->compute();
+		dcb_->cleanTriangulation();
+		
+
+		if(cdb_)
+			delete cdb_;
+		cdb_ = new CompDB(dcb_);
+		return cdb_->getRankTwo();
+	}
+	else if (phase_ == DELPHASE)
+	{
+		if (cdb_)
+			delete cdb_;
+		cdb_ = new CompDB(dcb_);
+		return cdb_->getRankTwo();
+	}
+	else if (phase_ == ALPHAPHASE)
+	{
+		return cdb_->getRankTwo();
+	}
+}
+
+double* CToolDoc::ComputeRankThree()
+{
+	if (phase_ == POINTPHASE)
+	{
+		dcb_->compute();
+		dcb_->cleanTriangulation();
+		
+
+		if(cdb_)
+			delete cdb_;
+		cdb_ = new CompDB(dcb_);
+		return cdb_->getRankThree();
+	}
+	else if (phase_ == DELPHASE)
+	{
+		if (cdb_)
+			delete cdb_;
+		cdb_ = new CompDB(dcb_);
+		return cdb_->getRankThree();
+	}
+	else if (phase_ == ALPHAPHASE)
+	{
+		return cdb_->getRankThree();
+	}
+}*/

@@ -10,6 +10,7 @@
 #include "RenderView.h"
 #include "AlphaDlg.h"
 #include "AskForCQ.h"
+#include "AlphaShapeDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -70,6 +71,8 @@ BEGIN_MESSAGE_MAP(CFormCommandView, CFormView)
 	ON_BN_CLICKED(IDC_FLIPALLEDGES, OnFlipalledges)
 	ON_BN_CLICKED(IDC_BREATH, OnBreath)
 	//}}AFX_MSG_MAP
+	ON_BN_CLICKED(IDC_ALPHASHAPE, OnAlphashape)
+	ON_BN_CLICKED(IDC_CHANGALPHA, OnChangeAlpha)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -359,7 +362,7 @@ void CFormCommandView::OnChangecq()
 {
 	AskForCQ dlg;
 	// Initialize dialog data 
-
+ 
 	dlg.setCQ(GetDocument()->getC(),GetDocument()->getQ());
 
 	// Invoke the dialog box
@@ -419,4 +422,53 @@ void CFormCommandView::OnBreath()
 	}
 	else
 		pView->KillTimer(2);
+}
+
+
+
+
+void CFormCommandView::OnAlphashape()
+{
+
+	CAlphaDlg dlg;
+	// Initialize dialog data
+
+	// Invoke the dialog box
+	if (dlg.DoModal() == IDOK)
+	{
+		CToolApp *pApp = (CToolApp *)AfxGetApp();
+		pApp->DoWaitCursor(1);
+		GetDocument()->ComputeAlphaShape(dlg.m_alphaValue);
+		GetRenderView()->InvalidateRect(NULL,FALSE); 
+	}
+}
+
+
+void CFormCommandView::OnChangeAlpha()
+{
+	// TODO: Add your control notification handler code here
+	
+	AfxEnableControlContainer();
+	InitCommonControls();
+
+	CAlphaShapeDlg dlg;
+
+	INITCOMMONCONTROLSEX InitCtrlEx;
+
+	InitCtrlEx.dwSize = sizeof(INITCOMMONCONTROLSEX);
+	InitCtrlEx.dwICC  = ICC_PROGRESS_CLASS;
+	InitCommonControlsEx(&InitCtrlEx); 
+	
+	INT_PTR nResponse = dlg.DoModal();
+	if (nResponse == IDOK)
+	{
+		//GetDocument()->ComputeRankZero();
+		//GetDocument()->ComputeRankOne();
+		//GetDocument()->ComputeRankTwo();
+		//GetDocument()->ComputeRankThree();
+	}
+	else if (nResponse == IDCANCEL)
+	{
+
+	}
 }

@@ -35,6 +35,7 @@ public:
 	//{{AFX_DATA(CFormCommandView)
 	enum { IDD = IDD_FORM_COMMAND };
 	CSliderCtrl	m_Scale;
+	CSliderCtrl m_Alpha;
 	CStatic	m_ControlColorLightAmbient;
 	CStatic	m_ControlBackColor;
 	BOOL	m_Smooth;
@@ -88,8 +89,13 @@ protected:
 	afx_msg void OnGrowMesh();
 	afx_msg void OnFlipalledges();
 	afx_msg void OnBreath();
+	afx_msg void OnAlphashape();
+	afx_msg void OnChangeAlpha();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
+
+
+
 };
 
 #ifndef _DEBUG  // debug version in RenderView.cpp
@@ -103,5 +109,6 @@ inline CToolDoc* CFormCommandView::GetDocument()
 // Microsoft Developer Studio will insert additional declarations immediately before the previous line.
 
 #endif // !defined(AFX_FORMCOMMANDVIEW_H__A4283CC1_72E6_11D1_A6C2_00A0242C0A32__INCLUDED_)
+#include "afxcmn.h"
 
 

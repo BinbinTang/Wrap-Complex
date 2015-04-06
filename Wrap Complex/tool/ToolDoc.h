@@ -64,11 +64,16 @@ public:
 	virtual double getQ() {return sm_->getQ();};
 	virtual void setCQ(double c,double q) {sm_->setCQ(c,q);};
 	virtual void ComputeDelTri();
+	virtual void ComputeAlphaShape(double);
 	virtual void DumpPoints(const char*);
 	virtual void refine();
 	virtual int Phase();
 	virtual void BreathMotion();
 	virtual void SetBreathTo(double);
+	double* ComputeRankZero();
+	double* ComputeRankOne();
+	double* ComputeRankTwo();
+	double* ComputeRankThree();
 	virtual ~CToolDoc();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
@@ -77,6 +82,7 @@ public:
 
 protected:
 	DCompBuilder* dcb_;
+	DCompBuilder* dcb_alpha;
 	double absMax_;
 	double alpha1_,alpha2_;
 	int motion_;
@@ -94,6 +100,7 @@ protected:
 	afx_msg void OnViewStatistics();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
+	void drawAlphaShape(double alpha);
 };
 
 /////////////////////////////////////////////////////////////////////////////

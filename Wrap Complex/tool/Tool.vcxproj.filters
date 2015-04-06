@@ -45,6 +45,78 @@
     <ClCompile Include="ToolDoc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AlphaShapeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartAxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartAxisLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartBarSerie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartCandlestickSerie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartCrossHairCursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartCursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartDateTimeAxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartDragLineCursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartFont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartGanttSerie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartGradient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartLegend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartLineSerie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartLogarithmicAxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartPointsSerie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartScrollBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartSerie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartStandardAxis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartSurfaceSerie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartTitle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartXYSerie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Tool.rc">
@@ -83,6 +155,102 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ToolDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlphaShapeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\PointsOrdering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartAxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartAxisLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartBalloonLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartBarSerie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartCandlestickSerie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartCrossHairCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartDateTimeAxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartDragLineCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartGanttSerie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartGradient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartLegend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartLineSerie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartLogarithmicAxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartMouseListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartPointsArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartPointsSerie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartScrollBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartSerie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartSerieBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartSeriesMouseListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartStandardAxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartSurfaceSerie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartTitle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartXYSerie.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

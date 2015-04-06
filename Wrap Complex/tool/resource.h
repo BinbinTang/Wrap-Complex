@@ -1,5 +1,5 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Developer Studio generated include file.
+// Microsoft Visual C++ generated include file.
 // Used by Tool.rc
 //
 #define IDD_ABOUTBOX                    100
@@ -20,6 +20,8 @@
 #define IDC_GENSKIN                     1017
 #define IDC_SAVESTL                     1018
 #define IDC_REFINEMESH                  1019
+#define IDC_ALPHASHAPE                  1021
+#define IDC_CHANGALPHA                  1022
 #define IDC_ASKFORC                     1024
 #define IDC_ASKFORQ                     1025
 #define IDC_CHANGECQ                    1026
@@ -27,6 +29,9 @@
 #define IDC_GROW_MESH                   1028
 #define IDC_FLIPALLEDGES                1029
 #define IDC_BREATH                      1030
+#define IDD_ALPHASHAPE                  1033
+#define IDC_CUSTOM1                     1034
+#define IDC_CHARTCTRL                   1034
 #define ID_VIEW_STATISTICS              32772
 
 // Next default values for new objects
@@ -34,9 +39,9 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
-#define _APS_NEXT_RESOURCE_VALUE        135
+#define _APS_NEXT_RESOURCE_VALUE        137
 #define _APS_NEXT_COMMAND_VALUE         32773
-#define _APS_NEXT_CONTROL_VALUE         1031
+#define _APS_NEXT_CONTROL_VALUE         1035
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

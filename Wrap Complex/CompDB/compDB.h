@@ -130,6 +130,11 @@ public:
 	//---------compute alpha value-------------------
 	void computeAlpha();
 	double getAlpha(int Idx, Dim d);
+	double* getRank();
+	/*double* getRankZero();
+	double* getRankOne();
+	double* getRankTwo();
+	double* getRankThree();*/
 	//void computePocket(double alpha, double belta, TIndex* tetraset);
 	TIndex* computePocket(double alpha, double belta);
 	TIndex findset(TIndex a);
@@ -177,6 +182,7 @@ protected:
     void createRecordAndIndices_();
     void computeAlphaShapeFilter_();
     void computeHiddenBV_();
+	
 
     Vector3 planeNormal0to1_(VIndex,EIndex);
     Vector3 planeNormal1to2_(EIndex,FIndex);

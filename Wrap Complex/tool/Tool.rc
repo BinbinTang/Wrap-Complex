@@ -1,4 +1,4 @@
-//Microsoft Developer Studio generated resource script.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -13,13 +13,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// English (U.S.) resources
+// English (United States) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-#ifdef _WIN32
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 #pragma code_page(1252)
-#endif //_WIN32
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -28,22 +26,22 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Tool.ico"
-IDR_MODELTYPE           ICON    DISCARDABLE     "res\\ToolDoc.ico"
+IDR_MAINFRAME           ICON                    "res\\Tool.ico"
+IDR_MODELTYPE           ICON                    "res\\ToolDoc.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Bitmap
 //
 
-IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Toolbar
 //
 
-IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+IDR_MAINFRAME TOOLBAR 16, 15
 BEGIN
     BUTTON      ID_FILE_NEW
     BUTTON      ID_FILE_OPEN
@@ -59,7 +57,7 @@ END
 // Menu
 //
 
-IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+IDR_MAINFRAME MENU
 BEGIN
     POPUP "&File"
     BEGIN
@@ -84,7 +82,7 @@ BEGIN
     END
 END
 
-IDR_MODELTYPE MENU PRELOAD DISCARDABLE 
+IDR_MODELTYPE MENU
 BEGIN
     POPUP "&File"
     BEGIN
@@ -95,8 +93,7 @@ BEGIN
         MENUITEM "Save &As...",                 ID_FILE_SAVE_AS, GRAYED
         MENUITEM SEPARATOR
         MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, GRAYED
-        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
-        , GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW, GRAYED
         MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
@@ -138,7 +135,7 @@ END
 // Accelerator
 //
 
-IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+IDR_MAINFRAME ACCELERATORS
 BEGIN
     "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
     "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
@@ -162,8 +159,8 @@ END
 // Dialog
 //
 
-IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_ABOUTBOX DIALOG 0, 0, 217, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About Tool"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -174,41 +171,35 @@ BEGIN
     LTEXT           "By Alan, Holun Cheng",IDC_STATIC,40,22,70,8
 END
 
-IDD_FORM_COMMAND DIALOG DISCARDABLE  0, 0, 94, 265
-STYLE WS_CHILD
-FONT 8, "MS Sans Serif"
+IDD_FORM_COMMAND DIALOGEX 0, 0, 94, 321
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
-    CONTROL         "",IDC_FRAME_COLOR_BACK,"Static",SS_BLACKFRAME | 
-                    SS_SUNKEN | WS_TABSTOP,60,20,10,10
-    CONTROL         "",IDC_FRAME_COLOR_LIGHT_AMBIENT,"Static",SS_BLACKFRAME | 
-                    SS_SUNKEN,60,35,10,10
-    CONTROL         "Antialiasing",IDC_CHECK_ANTIALIAS,"Button",
-                    BS_AUTOCHECKBOX | WS_TABSTOP,13,60,65,10
-    CONTROL         "Gouraud",IDC_CHECK_SMOOTH,"Button",BS_AUTOCHECKBOX | 
-                    WS_TABSTOP,13,73,65,10
-    CONTROL         "Rotation",IDC_CHECK_VROTATION,"Button",BS_AUTOCHECKBOX | 
-                    WS_GROUP | WS_TABSTOP,13,86,49,10
-    CONTROL         "Slider1",IDC_SLIDER_SCALE,"msctls_trackbar32",TBS_BOTH | 
-                    TBS_NOTICKS | WS_TABSTOP,11,145,74,15
-    PUSHBUTTON      "Delunay Tri",IDC_DELTRI,5,173,82,13
-    PUSHBUTTON      "Generate Skin",IDC_GENSKIN,5,185,82,13
-    PUSHBUTTON      "Save STL",IDC_SAVESTL,5,197,82,13
-    PUSHBUTTON      "Refine Mesh",IDC_REFINEMESH,5,209,82,13
+    CONTROL         "",IDC_FRAME_COLOR_BACK,"Static",SS_BLACKFRAME | SS_SUNKEN | WS_TABSTOP,60,20,10,10
+    CONTROL         "",IDC_FRAME_COLOR_LIGHT_AMBIENT,"Static",SS_BLACKFRAME | SS_SUNKEN,60,35,10,10
+    CONTROL         "Antialiasing",IDC_CHECK_ANTIALIAS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,60,65,10
+    CONTROL         "Gouraud",IDC_CHECK_SMOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,73,65,10
+    CONTROL         "Rotation",IDC_CHECK_VROTATION,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,86,49,10
+    CONTROL         "Slider1",IDC_SLIDER_SCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,11,145,74,15
+    PUSHBUTTON      "Delunay Tri",IDC_DELTRI,5,171,82,13
+    PUSHBUTTON      "Generate Skin",IDC_GENSKIN,5,215,82,13
+    PUSHBUTTON      "Save STL",IDC_SAVESTL,5,228,82,13
+    PUSHBUTTON      "Refine Mesh",IDC_REFINEMESH,5,241,82,13
     GROUPBOX        "Colors",IDC_STATIC,5,7,78,46
     LTEXT           "Background",IDC_STATIC,15,20,40,10
     GROUPBOX        "Scaling",IDC_STATIC,5,132,82,38
     LTEXT           "Light",IDC_STATIC,15,35,20,10
-    PUSHBUTTON      "Change C & Q",IDC_CHANGECQ,5,221,82,13
-    CONTROL         "Skin Mesh Edges",IDC_CHECK_MESH,"Button",
-                    BS_AUTOCHECKBOX | WS_TABSTOP,13,99,71,10
-    PUSHBUTTON      "Grow Mesh",IDC_GROW_MESH,5,233,82,13
-    PUSHBUTTON      "Flip All Edges",IDC_FLIPALLEDGES,5,245,82,13
-    CONTROL         "Breath",IDC_BREATH,"Button",BS_AUTOCHECKBOX | 
-                    WS_TABSTOP,13,112,37,10
+    PUSHBUTTON      "Change C & Q",IDC_CHANGECQ,5,254,82,13
+    CONTROL         "Skin Mesh Edges",IDC_CHECK_MESH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,99,71,10
+    PUSHBUTTON      "Grow Mesh",IDC_GROW_MESH,5,267,82,13
+    PUSHBUTTON      "Flip All Edges",IDC_FLIPALLEDGES,5,279,82,13
+    CONTROL         "Breath",IDC_BREATH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,112,37,10
+    PUSHBUTTON      "Alpha Shape",IDC_ALPHASHAPE,5,184,82,13
+    PUSHBUTTON      "Change Alpha",IDC_CHANGALPHA,5,199,82,13
 END
 
-IDD_ASKFORALPHA DIALOG DISCARDABLE  0, 0, 188, 50
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_ASKFORALPHA DIALOG 0, 0, 188, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Generate Skin"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -218,8 +209,8 @@ BEGIN
     LTEXT           "Enter an alpha value:",IDC_STATIC,13,16,75,15
 END
 
-IDD_ASKFORCQ DIALOG DISCARDABLE  0, 0, 154, 60
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_ASKFORCQ DIALOG 0, 0, 154, 60
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Input C & Q"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -231,8 +222,15 @@ BEGIN
     LTEXT           "Q",IDC_STATIC,17,31,8,8
 END
 
+IDD_ALPHASHAPE DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alpha Shape"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "ChartCtrl",IDC_CHARTCTRL,"ChartCtrl",WS_CLIPCHILDREN | WS_TABSTOP,7,7,295,134
+END
 
-#ifndef _MAC
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // Version
@@ -255,18 +253,13 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "Comments", "\0"
-            VALUE "CompanyName", "\0"
-            VALUE "FileDescription", "Tool MFC Application\0"
-            VALUE "FileVersion", "1, 0, 0, 1\0"
-            VALUE "InternalName", "Tool\0"
-            VALUE "LegalCopyright", "Copyright (C) 1997\0"
-            VALUE "LegalTrademarks", "\0"
-            VALUE "OriginalFilename", "Tool.EXE\0"
-            VALUE "PrivateBuild", "\0"
-            VALUE "ProductName", "Tool Application\0"
-            VALUE "ProductVersion", "1, 0, 0, 1\0"
-            VALUE "SpecialBuild", "\0"
+            VALUE "FileDescription", "Tool MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Tool"
+            VALUE "LegalCopyright", "Copyright (C) 1997"
+            VALUE "OriginalFilename", "Tool.EXE"
+            VALUE "ProductName", "Tool Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
         END
     END
     BLOCK "VarFileInfo"
@@ -275,8 +268,6 @@ BEGIN
     END
 END
 
-#endif    // !_MAC
-
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -284,7 +275,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO DISCARDABLE 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
@@ -299,7 +290,7 @@ BEGIN
         LEFTMARGIN, 5
         RIGHTMARGIN, 90
         TOPMARGIN, 7
-        BOTTOMMARGIN, 258
+        BOTTOMMARGIN, 314
     END
 
     IDD_ASKFORALPHA, DIALOG
@@ -317,6 +308,14 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 53
     END
+
+    IDD_ALPHASHAPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -326,19 +325,19 @@ END
 // String Table
 //
 
-STRINGTABLE PRELOAD DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "3d ToolBox"
     IDR_MODELTYPE           "\nModel\nModem\nSkin Files (*.skn)\n.skn\nModel.Document\nSkin Document"
 END
 
-STRINGTABLE PRELOAD DISCARDABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "Meskin"
     AFX_IDS_IDLEMESSAGE     "Ready"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_INDICATOR_EXT        "EXT"
     ID_INDICATOR_CAPS       "CAP"
@@ -348,7 +347,7 @@ BEGIN
     ID_INDICATOR_REC        "REC"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_NEW             "Create a new document\nNew"
     ID_FILE_OPEN            "Open an existing document\nOpen"
@@ -361,13 +360,13 @@ BEGIN
     ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
     ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_MRU_FILE1       "Open this document"
     ID_FILE_MRU_FILE2       "Open this document"
@@ -387,13 +386,13 @@ BEGIN
     ID_FILE_MRU_FILE16      "Open this document"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
     ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
     ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
@@ -403,7 +402,7 @@ BEGIN
     ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_CLEAR           "Erase the selection\nErase"
     ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
@@ -418,13 +417,13 @@ BEGIN
     ID_EDIT_REDO            "Redo the previously undone action\nRedo"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
     ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCSIZE          "Change the window size"
     AFX_IDS_SCMOVE          "Change the window position"
@@ -435,19 +434,19 @@ BEGIN
     AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCRESTORE       "Restore the window to normal size"
     AFX_IDS_SCTASKLIST      "Activate Task List"
     AFX_IDS_MDICHILD        "Activate this window"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
 END
 
-#endif    // English (U.S.) resources
+#endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -455,10 +454,8 @@ END
 // French (France) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
-#ifdef _WIN32
 LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
 #pragma code_page(1252)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -466,18 +463,18 @@ LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE DISCARDABLE 
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE DISCARDABLE 
+2 TEXTINCLUDE 
 BEGIN
     "#include ""afxres.h""\r\n"
     "\0"
 END
 
-3 TEXTINCLUDE DISCARDABLE 
+3 TEXTINCLUDE 
 BEGIN
     "#define _AFX_NO_OLE_RESOURCES\r\n"
     "#define _AFX_NO_TRACKER_RESOURCES\r\n"
@@ -502,7 +499,7 @@ END
 // Cursor
 //
 
-IDC_CURSOR_ROTATION     CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_CURSOR_ROTATION     CURSOR                  "res\\cursor1.cur"
 #endif    // French (France) resources
 /////////////////////////////////////////////////////////////////////////////
 

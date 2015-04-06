@@ -121,6 +121,7 @@
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <ObjectFileName>.\Debug\</ObjectFileName>
       <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -149,7 +150,31 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AlphaDlg.cpp" />
+    <ClCompile Include="AlphaShapeDlg.cpp" />
     <ClCompile Include="AskForCQ.cpp" />
+    <ClCompile Include="ChartAxis.cpp" />
+    <ClCompile Include="ChartAxisLabel.cpp" />
+    <ClCompile Include="ChartBarSerie.cpp" />
+    <ClCompile Include="ChartCandlestickSerie.cpp" />
+    <ClCompile Include="ChartCrossHairCursor.cpp" />
+    <ClCompile Include="ChartCtrl.cpp" />
+    <ClCompile Include="ChartCursor.cpp" />
+    <ClCompile Include="ChartDateTimeAxis.cpp" />
+    <ClCompile Include="ChartDragLineCursor.cpp" />
+    <ClCompile Include="ChartFont.cpp" />
+    <ClCompile Include="ChartGanttSerie.cpp" />
+    <ClCompile Include="ChartGradient.cpp" />
+    <ClCompile Include="ChartGrid.cpp" />
+    <ClCompile Include="ChartLegend.cpp" />
+    <ClCompile Include="ChartLineSerie.cpp" />
+    <ClCompile Include="ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="ChartPointsSerie.cpp" />
+    <ClCompile Include="ChartScrollBar.cpp" />
+    <ClCompile Include="ChartSerie.cpp" />
+    <ClCompile Include="ChartStandardAxis.cpp" />
+    <ClCompile Include="ChartSurfaceSerie.cpp" />
+    <ClCompile Include="ChartTitle.cpp" />
+    <ClCompile Include="ChartXYSerie.cpp" />
     <ClCompile Include="ChildFrm.cpp" />
     <ClCompile Include="DlgAbout.cpp" />
     <ClCompile Include="FormCommandView.cpp" />
@@ -168,8 +193,40 @@
     <ResourceCompile Include="Tool.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\source\PointsOrdering.h" />
     <ClInclude Include="AlphaDlg.h" />
+    <ClInclude Include="AlphaShapeDlg.h" />
     <ClInclude Include="AskForCQ.h" />
+    <ClInclude Include="ChartAxis.h" />
+    <ClInclude Include="ChartAxisLabel.h" />
+    <ClInclude Include="ChartBalloonLabel.h" />
+    <ClInclude Include="ChartBarSerie.h" />
+    <ClInclude Include="ChartCandlestickSerie.h" />
+    <ClInclude Include="ChartCrossHairCursor.h" />
+    <ClInclude Include="ChartCtrl.h" />
+    <ClInclude Include="ChartCursor.h" />
+    <ClInclude Include="ChartDateTimeAxis.h" />
+    <ClInclude Include="ChartDragLineCursor.h" />
+    <ClInclude Include="ChartFont.h" />
+    <ClInclude Include="ChartGanttSerie.h" />
+    <ClInclude Include="ChartGradient.h" />
+    <ClInclude Include="ChartGrid.h" />
+    <ClInclude Include="ChartLabel.h" />
+    <ClInclude Include="ChartLegend.h" />
+    <ClInclude Include="ChartLineSerie.h" />
+    <ClInclude Include="ChartLogarithmicAxis.h" />
+    <ClInclude Include="ChartMouseListener.h" />
+    <ClInclude Include="ChartPointsArray.h" />
+    <ClInclude Include="ChartPointsSerie.h" />
+    <ClInclude Include="ChartScrollBar.h" />
+    <ClInclude Include="ChartSerie.h" />
+    <ClInclude Include="ChartSerieBase.h" />
+    <ClInclude Include="ChartSeriesMouseListener.h" />
+    <ClInclude Include="ChartStandardAxis.h" />
+    <ClInclude Include="ChartString.h" />
+    <ClInclude Include="ChartSurfaceSerie.h" />
+    <ClInclude Include="ChartTitle.h" />
+    <ClInclude Include="ChartXYSerie.h" />
     <ClInclude Include="ChildFrm.h" />
     <ClInclude Include="DlgAbout.h" />
     <ClInclude Include="FormCommandView.h" />

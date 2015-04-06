@@ -898,6 +898,90 @@ void CompDB::makeMasterList()
 	getDp();
 }
 
+double* CompDB::getRank()
+{
+	for (int i=0; i<nSimp_[0]; i++)
+	{
+	}
+}
+
+/*double* CompDB::getRankZero()
+{
+	double maxA = MINUSINFI;
+	int alpha;
+	double pre_Alpha = 0;
+	double value[20000000];
+	for (int i=0; i<=nSimp_[0]; i++)
+	{
+		if(!redundent_->test(i))
+				{
+					double aSqr = (getCenter((i<<2)|0)-getVertex(i)).lengthsqr() - getW(i)*getW(i);
+					alpha = (int) Sign(aSqr)*sqrt(fabs(aSqr));
+				}
+		else alpha = maxA;
+		for (int j=pre_Alpha; j<alpha; j++)
+						value[j] = i;
+		pre_Alpha = alpha;
+	}
+	return value;
+}
+
+double* CompDB::getRankOne()
+{
+	double maxA = MINUSINFI;
+	int alpha;
+	double pre_Alpha = 0;
+	double value[20000000];
+	for (int i=0; i<=nSimp_[1]; i++)
+	{
+		if(!hidden(i, 1))
+				//if(!hiddenBV_[d]->test(Idx))
+					alpha = rou_[nSimp_[3]+nSimp_[2]+i-1];
+				else 
+					alpha = rankTable_[1][i];
+		for (int j=pre_Alpha; j<alpha; j++)
+						value[j] = i;
+		pre_Alpha = alpha;
+	}
+	return value;
+}
+
+double* CompDB::getRankTwo()
+{
+	double maxA = MINUSINFI;
+	int alpha;
+	double pre_Alpha = 0;
+	double value[20000000];
+	for (int i=0; i<=nSimp_[1]; i++)
+	{
+		if(!hidden(i,2))
+				//if(!hiddenBV_[d]->test(Idx))
+					alpha = rou_[nSimp_[3]+i-1];
+				else 
+					alpha = rankTable_[2][i];
+		for (int j=pre_Alpha; j<alpha; j++)
+						value[j] = i;
+		pre_Alpha = alpha;
+	}
+	return value;
+}
+
+double* CompDB::getRankThree()
+{
+	double maxA = MINUSINFI;
+	int alpha;
+	double pre_Alpha = 0;
+	double value[20000000];
+	for (int i=0; i<=nSimp_[1]; i++)
+	{
+		alpha = rou_[i-1];
+		for (int j=pre_Alpha; j<alpha; j++)
+						value[j] = i;
+		pre_Alpha = alpha;
+	}
+	return value;
+}*/
+
 double CompDB::getAlpha(int Idx, Dim d)
 {
 	//int testidx;

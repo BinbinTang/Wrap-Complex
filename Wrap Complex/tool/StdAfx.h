@@ -35,6 +35,7 @@
 //////////////////////////////////////////////
 #include <gl\gl.h>
 #include <gl\glu.h>
+#include <afxcontrolbars.h>
 //#include <GL\glaux.h>
 
 
